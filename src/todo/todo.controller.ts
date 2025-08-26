@@ -7,7 +7,6 @@ import {
   Param,
   Patch,
   Post,
-  Put,
 } from '@nestjs/common';
 import { TodoService } from './todo.service';
 import { Todo } from '@prisma/client';

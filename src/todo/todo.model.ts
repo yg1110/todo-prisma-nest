@@ -3,23 +3,23 @@ import { IsBoolean, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 export class CreateTodoDto {
   @IsNotEmpty()
   @IsString()
-  title: string;
+  title: string = '';
 
   @IsOptional()
   @IsString()
-  content: string;
+  content?: string;
 }
 
 export class UpdateTodoDto {
   @IsString()
   @IsOptional()
-  title: string;
+  title?: string;
 
   @IsOptional()
   @IsString()
-  content: string;
+  content?: string;
 
   @IsOptional()
   @IsBoolean()
-  isDone: boolean;
+  isDone?: boolean;
 }
